@@ -12,10 +12,10 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 768,
-    width: 1366,
-		minWidth: 1366,
-		minHeight: 768,
+    height: 720,
+    width: 1280,
+		minWidth: 1280,
+		minHeight: 720,
   });
 
   mainWindow.loadURL(winURL);

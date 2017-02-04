@@ -12,7 +12,7 @@
 </script>
 
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Lato:300);
+  @import url(https://fonts.googleapis.com/css?family=Cardo:400,700|Lato:100,400,700);
 
   * {
     margin: 0;
@@ -23,13 +23,28 @@
   body { min-height: 100%; }
 
   body {
-    background:
-      radial-gradient(
-        ellipse at center,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(229, 229, 229, .85) 100%
-      );
-    background-position: center;
+		background:#f6f6f7;
     font-family: Lato, Helvetica, sans-serif;
   }
+	button {
+  	-webkit-app-region: no-drag;
+	}
+	.titlebar {
+  	-webkit-user-select: none;
+  	-webkit-app-region: drag;
+	}
+	/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 </style>
