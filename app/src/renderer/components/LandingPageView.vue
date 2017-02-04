@@ -1,30 +1,43 @@
 <template>
   <div>
-    <img src="./LandingPageView/assets/logo.png" alt="electron-vue">
-    <h1>Welcome.</h1>
-    <current-page></current-page>
-    <versions></versions>
-    <links></links>
+		<el-row>
+			<el-col :span="4">
+				<el-menu default-active="2" class="el-menu-vertical-demo" theme="dark">
+		      <el-submenu index="1">
+		        <template slot="title">Navigator One</template>
+		        <el-menu-item-group title="Group One">
+		          <el-menu-item index="1-1">item one</el-menu-item>
+		          <el-menu-item index="1-2">item two</el-menu-item>
+		        </el-menu-item-group>
+		        <el-menu-item-group title="Group Two">
+		          <el-menu-item index="1-3">item three</el-menu-item>
+		        </el-menu-item-group>
+		        <el-submenu index="1-4">
+		          <template slot="title">item four</template>
+		          <el-menu-item index="1-4-1">item one</el-menu-item>
+		        </el-submenu>
+		      </el-submenu>
+		      <el-menu-item index="2">Navigator Two</el-menu-item>
+		      <el-menu-item index="3">Navigator Three</el-menu-item>
+		    </el-menu>
+			</el-col>
+		</el-row>
   </div>
 </template>
 
 <script>
-  import CurrentPage from './LandingPageView/CurrentPage';
-  import Links from './LandingPageView/Links';
-  import Versions from './LandingPageView/Versions';
-  export default {
-    components: {
-      CurrentPage,
-      Links,
-      Versions,
-    },
-    name: 'landing-page',
-  };
+import SideNav from './LandingPageView/SideNav';
+export default {
+  components: {
+    SideNav,
+  },
+  name: 'landing-page',
+};
 </script>
 
 <style scoped>
-  img {
-    margin-top: -25px;
-    width: 450px;
-  }
+.el-menu {
+	border-radius:0px;
+  min-height: 100vh;
+}
 </style>
