@@ -14,8 +14,8 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     height: 720,
     width: 1280,
-		minWidth: 1280,
-		minHeight: 720,
+    minWidth: 1280,
+    minHeight: 720,
   });
 
   mainWindow.loadURL(winURL);
