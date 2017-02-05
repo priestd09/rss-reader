@@ -13,6 +13,7 @@
 						</el-input>
 					</el-col>
 				</el-col>
+				<article-list></article-list>
 			</el-col>
 			<el-col :span="12" :offset="12" class="articles-container">
 				<article-page></article-page>
@@ -20,10 +21,10 @@
 		</el-row>
 	</div>
 </template>
-
 <script>
 import SideNav from './LandingPageView/SideNav';
 import ArticlePage from './LandingPageView/ArticlePage';
+import ArticleList from './LandingPageView/ArticleList';
 
 export default {
   data() {
@@ -37,13 +38,13 @@ export default {
   components: {
     SideNav,
     ArticlePage,
+    ArticleList,
   },
   name: 'landing-page',
 };
 </script>
 
 <style lang="scss">
-
 .article-list-container {
 	top:0px;
 	bottom:0px;
@@ -53,6 +54,7 @@ export default {
 	min-height:100vh;
 	height: 100%;
 	border-right:1px solid #d3d3d3;
+	position:absolute;
 }
 
 .search-container {
@@ -67,11 +69,5 @@ export default {
 		margin: 0 auto;
 		float:none;
 	}
-}
-
-.article-item {
-	background: white;
-	border-bottom: 1px solid #d3d3d3;
-	height: 100px;
 }
 </style>
