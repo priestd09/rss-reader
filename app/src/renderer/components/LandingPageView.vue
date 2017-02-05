@@ -44,8 +44,7 @@ export default {
 
 <style lang="scss">
 
-.article-list-container
-{
+.article-list-container {
 	top:0px;
 	bottom:0px;
 	left:0px;
@@ -66,6 +65,7 @@ export default {
 	margin: 0 auto;
 	.search-input {
 		margin: 0 auto;
+		float:none;
 	}
 }
 

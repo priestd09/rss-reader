@@ -54,7 +54,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss">
 .articles-container {
 	background:#f6f6f7;
 	border-right:1px solid #d3d3d3;
@@ -83,11 +83,12 @@ export default {
 	font-size: 14px;
 	font-family: 'Lato',sans-serif;
 	color:black;
+	.favicon {
+		vertical-align: middle;
+		margin-right:6px;
+	}
 }
-.feed-name .favicon {
-	vertical-align: middle;
-	margin-right:6px;
-}
+
 .option-controls {
 	min-height:100%;
 	height:57px;
@@ -105,55 +106,52 @@ export default {
 .article-content {
 	padding:20px 30px;
 	margin-top:57px;
-}
-.article-content .title {
-	font-family: 'Lato',sans-serif;
-	font-size: 1.8rem;
-	margin: 15px 0 16px 0
-}
-.article-content .author {
-	font-family: 'Lato',sans-serif;
-	font-size: 14px;
-}
-.article-content .separator {
-	color: #cbcbcb;
-	margin-right: .5rem;
-	margin-left: .5rem;
-}
-.article-content img {
-	display:block;
-	max-width:100%;
-	width: 100%;
-	height:auto;
-	vertical-align: middle;
-	border: 0;
-	margin: 0 0 10px 0;
-}
-.article-content p {
-	font-family: 'Cardo',serif;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	line-height:1.5;
-	font-size: 1rem;
-}
-
-.article-content blockquote {
-	border-left: 3px solid #e1e1e1;
-	padding-left: 37px;
-	font-style:italic;
-	color: inherit;
-	font-size: inherit;
-}
-
-.article-content a {
-	color: #1D8CE0;
-	text-decoration:none;
-	padding-bottom:0.5px;
-	border-bottom: 1px solid #1D8CE0;
-	transition: 150ms ease-out border-bottom-color, 200ms ease-out color;
-}
-
-.article-content a:hover {
-	color: #20A0FF;
+	.title {
+		font-family: 'Lato',sans-serif;
+		font-size: 1.8rem;
+		margin: 15px 0 16px 0;
+	}
+	.author {
+		font-family: 'Lato',sans-serif;
+		font-size: 14px;
+	}
+	.separator {
+		color: #cbcbcb;
+		margin-right: .5rem;
+		margin-left: .5rem;
+	}
+	img {
+		display:block;
+		max-width:100%;
+		width: 100%;
+		height:auto;
+		vertical-align: middle;
+		border: 0;
+		margin: 0 0 10px 0;
+	}
+	p {
+		font-family: 'Cardo',serif;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		line-height:1.5;
+		font-size: 1rem;
+	}
+	blockquote {
+		border-left: 3px solid #e1e1e1;
+		padding-left: 37px;
+		font-style:italic;
+		color: inherit;
+		font-size: inherit;
+	}
+	a {
+		color: #1D8CE0;
+		text-decoration:none;
+		padding-bottom:0.5px;
+		border-bottom: 1px solid #1D8CE0;
+		transition: 150ms ease-out border-bottom-color, 200ms ease-out color;
+	}
+	a:hover {
+		color: #20A0FF;
+	}
 }
 </style>
