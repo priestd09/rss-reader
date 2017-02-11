@@ -130,7 +130,7 @@ export default {
 		margin: 0 0 10px 0;
 	}
 	p {
-		font-family: 'Cardo',serif;
+		font-family: Georgia, 'Times New Roman', Times, serif;
 		margin-top: 1em;
 		margin-bottom: 1em;
 		line-height:1.5;

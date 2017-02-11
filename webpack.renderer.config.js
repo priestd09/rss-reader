@@ -89,6 +89,7 @@ let rendererConfig = {
   },
   resolve: {
     alias: {
+			'external_links': path.join(__dirname, 'app/src/helpers/external_links.js'),
       'components': path.join(__dirname, 'app/src/renderer/components'),
       'renderer': path.join(__dirname, 'app/src/renderer')
     },

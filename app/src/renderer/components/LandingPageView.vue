@@ -7,9 +7,7 @@
 					<el-col :span="22" class="search-input">
 						<el-input
 							placeholder="Search"
-							icon="search"
-							v-model="input2"
-							:on-icon-click="handleIconClick">
+							icon="search">
 						</el-input>
 					</el-col>
 				</el-col>
@@ -66,7 +64,7 @@ export default {
 	width: 100%;
 	margin: 0 auto;
 	.search-input {
-		margin: 0 auto;
+		margin:0 auto;
 		float:none;
 	}
 }

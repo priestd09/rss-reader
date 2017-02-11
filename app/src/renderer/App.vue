@@ -12,7 +12,7 @@
 </script>
 
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Cardo:400,700|Lato:100,400,700);
+  @import url(https://fonts.googleapis.com/css?family=Lato:100,400,700);
 
   * {
     margin: 0;
