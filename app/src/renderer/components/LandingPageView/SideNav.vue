@@ -36,20 +36,22 @@
 				<p>Type or copy/paste link to website you want to subscribe to (It could b URL to entire site, or direct link to RSS file).</p>
 			</el-col>
 		</el-row>
-			<el-form :model="form">
+			<el-form :model="form" v-on:submit.prevent>
 					<el-form-item label="Website or Feed Url">
-						<el-input placeholder="Put link here" v-model="url" auto-complete="off"></el-input>
+						<el-input type="url" placeholder="Put link here" v-model="url" auto-complete="off"></el-input>
 					</el-form-item>
 			</el-form>
 			<span slot="footer" class="dialog-footer">
 				<el-button @click="addFeedDialog = false">Cancel</el-button>
-				<el-button type="primary" @click="addFeedDialog = false">Confirm</el-button>
+				<el-button type="primary" @click="addFeed()">Subscribe</el-button>
 			</span>
 		</el-dialog>
 	</div>
 </template>
 
 <script>
+const Console = window.console;
+
 export default {
   data() {
     return {
@@ -64,6 +66,7 @@ export default {
       this.addFeedDialog = true;
     },
     addFeed() {
+      Console.log(this.url);
     },
   },
 };
